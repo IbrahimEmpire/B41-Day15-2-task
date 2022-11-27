@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form By Ibrahim</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+
+    <script src="./script.js"></script>
+    
+    <div class="container" >
+    
+<!-- Fistname -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <label class="name" id="test7" for="fname">Firstname</label>
+        </div>
+        <input id="fname" type="text" class="form-control" placeholder="Firstname" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+          <!-- last name -->
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <label class="name" for="lname">Lastname</label>
+    </div>
+    <input id="lname" type="text" class="form-control" placeholder="Lastname" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <!-- adres -->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <label style="margin-right: 10px;" class="name" for="address">Address</label>
+    </div>
+    <input id="address" type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <!-- pincode -->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <label style="margin-right: 10px;" class="name" for="pincode">Pincode</label>
+    </div>
+    <input id="pincode" type="text" class="form-control" placeholder="Pincode" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <!-- Gender -->
+  <label for="Gender">Gender</label>
+  <div class="form-check male">
+    <input id="male" class="form-check-input" type="radio" name="Gender" value="Male🤵">
+    <label class="form-check-label" for="male">
+      Male🤵
+    </label>
+  </div>
+  <div class="form-check male">
+    <input id="female" class="form-check-input" type="radio" name="Gender" value="Female👧">
+    <label class="form-check-label" for="female">
+      Female👧
+    </label>
+  </div>
+  <br>
+  
+  <!-- checkbox -->
+  <label for="food">Select Your Foods🍴</label>
+  <br>
+  <div class="form-check form-check-inline male">
+    <input id="f1" class="form-check-input" type="checkbox" name="foodItems" id="inlineCheckbox1" value="Idly">
+    <label class="form-check-label" for="f1">Pizza 🍕</label>
+  </div>
+  <br>
+  <div class="form-check form-check-inline male">
+    <input id="f2" class="form-check-input" type="checkbox" name="foodItems" id="inlineCheckbox2" value="Dhosai">
+    <label class="form-check-label" for="f2">Burgar 🍔</label>
+  </div>
+  <br>
+  <div class="form-check form-check-inline male">
+    <input id="f3" class="form-check-input" type="checkbox" name="foodItems" id="inlineCheckbox1" value="Boori">
+    <label class="form-check-label" for="f3">Hotdog🌭</label>
+  </div>
+  <br>
+  <div class="form-check form-check-inline male">
+    <input id="f4" class="form-check-input" type="checkbox" name="foodItems" id="inlineCheckbox2" value="Pongal">
+    <label class="form-check-label" for="f4">Meat🥩</label>
+  </div>
+  <br>
+  <div class="form-check form-check-inline male">
+    <input id="f5" class="form-check-input" type="checkbox" name="foodItems" id="inlineCheckbox2" value="Nasi Goring">
+    <label class="form-check-label" for="f5">Apple juice🍹</label>
+  </div>
+  <br>
+  <br>
+  <!-- State -->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <label style="margin-right: 20px;" class="name" for="state">State</label>
+    </div>
+    <input id="state" type="text" class="form-control" placeholder="State" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <!-- country -->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <label  class="name" for="country">Country</label>
+    </div>
+    <input id="country" type="text" class="form-control" placeholder="Country" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+<!-- button -->
+
+<button style="margin-left: 50px ;"  type="button" onclick="submitButton()" value="submit" class="btn btn-success but">Submit</button>
+
+
+
+</div>
+    <!-- table -->
+    <table id="display" class="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">FirstName</th>
+            <th scope="col">LastNane</th>
+            <th scope="col">Address</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Foods</th>
+            <th scope="col">state</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="td1"></td>
+            <td id="td2"></td>
+            <td id="td3"></td>
+            <td id="td4"></td>
+            <td id="td5"></td>
+            <td id="td6"></td>
+            <td id="td7"></td>
+            <td id="td8"></td>
+          </tr>
+        
+        </tbody>
+      </table>
+ 
+</body>
+</html>

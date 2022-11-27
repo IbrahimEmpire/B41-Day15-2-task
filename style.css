@@ -1,0 +1,18 @@
+.name{
+    padding-right: 30px;
+    }
+    .male{
+        margin-left: 50px;
+    }
+    .container{
+        width: 50%;
+        margin: 10px; 
+        margin-left: 30%; 
+        padding: 3%; 
+        border: 2px solid skyblue;
+        border-radius: 30px;
+        box-shadow: 10px 7px rgb(0 130 255 / 84%)
+    }
+    .but{
+        box-shadow: 3px -3px rgb(0 177 255 / 70%)
+    }
